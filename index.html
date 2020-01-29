@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <title>GAME</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="navContainer">
+        <button id="buttonNav" onclick="pauseGame()">
+                <div class="iconbar"></div>
+                <div class="iconbar"></div>
+                <div class="iconbar"></div>
+        </button>
+        <div id="navBar">
+            <button id="navBarBtn1" type="button" onclick="startGame()">PLAY</button>
+            <button id="navBarBtn2" type="button" onclick="restart()">RESTART</button>
+        </div>
+    </div>
+        <div id="topBorder">
+            <h1>BOUNCE</h1>
+            <div id="wrapper" onclick="myfunction()"></div>
+        </div>
+        <div id="gameArea" onmousedown="jumpBall()">
+            <div id="ball"></div>
+        </div>
+        <div id="bottomBorder">
+            <h2>Score : <span id="score"></span></h2>
+        </div>
+    </div>
+
+</body>
+<script src="jquery-3.3.1.js"></script>
+<script src="scripts.js"></script>
+</html>
